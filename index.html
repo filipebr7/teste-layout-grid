@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Grid - Colunas Primeiro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Gerador de Grid (Preenchimento por Coluna)</h2>
+
+    <div class="controls">
+      <div class="input-group">
+        <div class="field">
+          <label for="rows">Nº de Linhas:</label>
+          <input type="number" id="rows" value="4" min="1" />
+        </div>
+        <div class="field">
+          <label for="cols">Nº de Colunas:</label>
+          <input type="number" id="cols" value="2" min="1" />
+        </div>
+      </div>
+
+      <label for="textInput"
+        >Texto (cada linha ocupará uma célula verticalmente):</label
+      >
+      <textarea id="textInput" placeholder="Digite o texto...">
+AA
+BB
+CC
+DD
+EE
+FF
+GG
+      </textarea>
+
+      <button id="btnGenerate">Gerar Grid</button>
+    </div>
+
+    <div id="gridContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
